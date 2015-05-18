@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.11.1.js" ></script>
+	<script type="text/javascript">
+var userAgent = navigator.userAgent.toLowerCase();
+alert(userAgent);
+    var platform;
+    if(userAgent == null || userAgent == ''){
+        platform = 'WEB' ; 
+    }else{
+        if(userAgent.indexOf("android") != -1 ){ 
+            platform = 'ANDROID';
+        }else if(userAgent.indexOf("ios") != -1 || userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1){ 
+            platform = 'IOS';
+        }else if(userAgent.indexOf("windows phone") != -1 ){ 
+            platform = 'WP';
+        }else{
+            platform = 'WEB' ;
+        }
+        alert(platform);
+    }
+</script>
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
